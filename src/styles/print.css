@@ -1,0 +1,168 @@
+/* Print styles for 8.5x11 inch paper */
+@media print {
+	@page {
+		size: letter;
+		margin: 0.5in;
+	}
+
+	* {
+		-webkit-print-color-adjust: exact !important;
+		color-adjust: exact !important;
+	}
+
+	body {
+		font-size: 12px !important;
+		line-height: 1.3 !important;
+		background: white !important;
+		color: black !important;
+	}
+
+	/* Hide navigation and non-essential elements */
+	.sidebar,
+	.mobile-header,
+	button,
+	.hover-lift,
+	.print-hide {
+		display: none !important;
+	}
+
+	/* Adjust main content for print */
+	.print-content {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100% !important;
+		max-width: none !important;
+	}
+
+	/* Chart adjustments */
+	.chart-container {
+		height: 300px !important;
+		page-break-inside: avoid;
+	}
+
+	/* Card adjustments */
+	.card {
+		border: 1px solid #ccc !important;
+		background: white !important;
+		margin-bottom: 20px !important;
+		page-break-inside: avoid;
+	}
+
+	.card-header {
+		background: #f5f5f5 !important;
+		border-bottom: 1px solid #ccc !important;
+		padding: 10px !important;
+	}
+
+	.card-title {
+		color: black !important;
+		font-size: 14px !important;
+		font-weight: bold !important;
+	}
+
+	.card-content {
+		padding: 10px !important;
+	}
+
+	/* Grid adjustments */
+	.grid {
+		display: grid !important;
+		gap: 15px !important;
+	}
+
+	.grid-cols-3 {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+
+	.grid-cols-2 {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	/* Text adjustments */
+	h1 {
+		font-size: 18px !important;
+		color: black !important;
+		margin-bottom: 10px !important;
+	}
+
+	h2 {
+		font-size: 16px !important;
+		color: black !important;
+		margin-bottom: 8px !important;
+	}
+
+	h3 {
+		font-size: 14px !important;
+		color: black !important;
+		margin-bottom: 6px !important;
+	}
+
+	p,
+	span,
+	div {
+		color: black !important;
+	}
+
+	/* Table adjustments */
+	table {
+		width: 100% !important;
+		border-collapse: collapse !important;
+		margin-bottom: 15px !important;
+	}
+
+	th,
+	td {
+		border: 1px solid #ccc !important;
+		padding: 5px !important;
+		text-align: left !important;
+		color: black !important;
+	}
+
+	th {
+		background: #f5f5f5 !important;
+		font-weight: bold !important;
+	}
+
+	/* Metrics adjustments */
+	.metric-item {
+		border: 1px solid #ccc !important;
+		padding: 10px !important;
+		margin-bottom: 10px !important;
+		background: white !important;
+	}
+
+	.metric-value {
+		font-size: 16px !important;
+		font-weight: bold !important;
+		color: black !important;
+	}
+
+	.metric-label {
+		font-size: 12px !important;
+		color: #666 !important;
+	}
+
+	/* Page breaks */
+	.page-break {
+		page-break-before: always;
+	}
+
+	.no-break {
+		page-break-inside: avoid;
+	}
+
+	/* Header for print */
+	.print-header {
+		text-align: center;
+		margin-bottom: 20px;
+		border-bottom: 2px solid #000;
+		padding-bottom: 10px;
+	}
+
+	.print-date {
+		text-align: right;
+		font-size: 10px;
+		color: #666;
+		margin-bottom: 15px;
+	}
+}

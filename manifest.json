@@ -1,0 +1,20 @@
+{
+    "name": "GlowBoard Analytics",
+    "short_name": "GlowBoard",
+    "description": "Effortlessly track daily sales and performance across all your medical spa locations and your eStore. Gain insights with an intuitive, elevated dashboard designed for clarity and speed.",
+    "icons": [
+        {
+            "src": "https://cdn.shopify.com/s/files/1/0071/6197/0758/files/logo-transp.png?v=1720771548",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://cdn.shopify.com/s/files/1/0071/6197/0758/files/logo-transp.png?v=1720771548",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "https://app--glow-flow-b101830d.base44.app",
+    "display": "standalone",
+    "theme_color": "#0e0e0e",
+    "background_color": "#faf8f6",
+    "scope": "https://app--glow-flow-b101830d.base44.app"
+}
